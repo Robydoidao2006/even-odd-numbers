@@ -1,0 +1,25 @@
+#evenGreen{
+    color:green;
+}
+
+#oddRed{
+    color:red;
+}
+
+
+#myForm{
+    margin-left: 30% ;
+}
+
+#displayMessage{
+    align-content: center;
+
+}
+
+#displayMessageEven {
+    background-color: green;
+}
+
+#displayMessageOdd {
+    background-color: red;
+}

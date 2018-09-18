@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='style.css'>
+ <title>Teste</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+</head>
+<body>
+<!-- checks input number, and displays if is an even or odd number -->
+<div class='row'>
+    <div class='col-lg-6'>
+            <h2 class='title'>Check if the number is an <span id="evenGreen">Even</span> number or an <span id="oddRed">Odd</span> number</h2>
+            <form method="GET" id="myForm">
+                <input type='text' id='number' required>
+                <button type="button" id='buttonOne'>Submit</button>
+            </form>
+        <h3 id='displayMessageOne'></h3>
+    </div>
+
+<!-- grabs a number and display all of the even and odds numbers from 0 to X input number -->
+<div class='col-lg-6'>
+    <h2 class='title'>Checks array number and displays all the <span id="evenGreen">Even</span> and <span id="oddRed">Odd</span> numbers</h2>
+        <form method="GET" id="myForm">
+                <input type='text' id='numberArray' required>
+                <button type="button" id='buttonTwo'>Submit</button>
+            </form>
+        <h3 id='displayMessageEven'></h3>
+        <h3 id='displayMessageOdd'></h3>
+    </div>
+
+</div>   <!-- close row -->
+  
+    <script src="script.js"></script>
+</body>
+</html>
