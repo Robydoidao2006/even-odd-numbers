@@ -27,14 +27,14 @@ button.addEventListener('click', function(){
 var button = document.querySelector('#buttonTwo');
 button.addEventListener('click', function(){
 
-    var numberArray        = document.querySelector('#numberArray').value; // arra number
+    var numberArray        = document.querySelector('#numberArray').value ++; // arra number
     var displayMessageEven = document.querySelector('#displayMessageEven');
     var displayMessageOdd  = document.querySelector('#displayMessageOdd');
   
     // loops throu array and display all even and odd numbers
     function eventTwo(){
         
-        for (var i = 0; i < numberArray; i++){   
+        for (var i = 1; i < numberArray +1; i++){   
             
             var messageEven =  i + ' is an even number' + '<br>';
             var messageOdd  =  i + ' is an odd number' + '<br>';
@@ -48,10 +48,13 @@ button.addEventListener('click', function(){
 
                 displayMessageOdd.innerHTML += messageOdd ;
                 //displayMessageTwo.style.background = 'red';
+                $('#myForm2')[0].reset();  
             }          
-        }                
+        }  
+                    
     }
     eventTwo();
+   
 }); // event listener.
 
 
